@@ -1,0 +1,23 @@
+/* temples-large.css (styles for larger screens) */
+
+header {
+    padding: 20px;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+main {
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .temple-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

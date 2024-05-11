@@ -1,0 +1,155 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+
+/* Main content styles */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+    
+}
+
+/* Hero image styles */
+.hero {
+
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    position: relative; /* Position relative for absolute positioning of content */
+}
+
+.hero img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    max-height: 110vh; /* Adjust maximum height as needed */
+    width: auto; /* Allow the image to scale with its aspect ratio */
+    height: auto; /* Allow the image to scale with its aspect ratio */
+    border: 5px solid #3fbe1f;
+   
+   
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(19, 18, 18);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(14, 5, 5);
+    
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(19, 18, 18);
+}
+
+#data {
+    
+    margin-top: 10px;
+    padding: 50px;
+    border-radius: 0px;
+    background-color: #fffb00;
+    border: 5px solid #3fbe1f;
+  
+   
+}
+
+#data p {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+#data {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Weather section styles */
+#weather {
+    margin-top: 0px;
+    padding: 30px;
+    border-radius: 0px;
+    background-color: #fffb00;
+    border: 5px solid #3fbe1f;
+  
+   
+}
+
+#weather h2 {
+    margin-bottom: 10px;
+}
+
+#weatherInfo {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ff0000;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: rgb(253, 248, 248);
+    text-decoration: none;
+}

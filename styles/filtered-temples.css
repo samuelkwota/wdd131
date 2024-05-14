@@ -12,7 +12,7 @@ body {
 /* Header styles */
 header {
     background-color: #1f84be;
-    color: #fff;
+    color: #111010;;
     padding: 0px;
     text-align: right;
     
@@ -37,6 +37,7 @@ h1 {
 header h2 {
     
     text-align: center;
+    
 }
 
 nav ul {
@@ -44,6 +45,8 @@ nav ul {
     padding: 10px;
     background-color: #1f84be;
     margin-top: 0px;
+    font-size: 1.2em; 
+    font-weight: bold;
     
     
 }
@@ -51,19 +54,22 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 50px;
+    
 
     
     
 }
 
 nav ul li a {
-    color: #fff;
+    color: #111010;;
     text-decoration: none;
+    
     
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    
 }
 
 .nav-links {
@@ -133,13 +139,16 @@ main {
 /* Footer styles */
 footer {
     background-color:#1f84be;
-    color: #fff;
-    padding: 10px;
+    color: #111010;
+    padding: 2px;
     text-align: center;
 }
 
 footer p {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.2em; 
+  
 }
 
 #lastModified {

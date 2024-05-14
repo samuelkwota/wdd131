@@ -1,0 +1,147 @@
+/* Reset default margin and padding */
+
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #1f84be;
+    color: #fff;
+    padding: 0px;
+    text-align: right;
+    
+    
+}
+
+header h3 {
+    margin: 0px;
+    text-align: left;
+    padding-left: 10px;
+    
+    
+
+    
+}
+h1 {
+    margin: 0;
+    text-align: center;
+
+    
+}
+header h2 {
+    
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #1f84be;
+    margin-top: 0px;
+    
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+
+    
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Main styles */
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 100px;
+    padding-left: 40px;
+    padding-right: 0px;
+    background-color: #fff;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 130px;
+}
+
+.main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    
+}
+
+/* Footer styles */
+footer {
+    background-color:#1f84be;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+#lastModified {
+    font-style: italic;
+}

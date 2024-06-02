@@ -1,39 +1,27 @@
-const products = [
-    {
-      id: "fc-1888",
-      name: "flux capacitor",
-      avg_rating: 4.5
-    },
-    {
-      id: "fc-2050",
-      name: "power laces",
-      avg_rating: 4.7
-    },
-    {
-      id: "fs-1987",
-      name: "time circuits",
-      avg_rating: 3.5
-    },
-    {
-      id: "ac-2000",
-      name: "low voltage reactor",
-      avg_rating: 3.9
-    },
-    {
-      id: "jj-1969",
-      name: "warp equalizer",
-      avg_rating: 5.0
-    }
-  ];
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    const productSelect = document.getElementById('product');
-    
-    products.forEach(product => {
-      const option = document.createElement('option');
-      option.value = product.name;
-      option.textContent = product.name;
-      productSelect.appendChild(option);
-    });
-    
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Simple form validation
+      if (name && email && message) {
+          // Save to localStorage
+          localStorage.setItem("contactName", name);
+          localStorage.setItem("contactEmail", email);
+          localStorage.setItem("contactMessage", message);
+          alert("Thank you for your message!");
+          form.reset();
+      } else {
+          alert("Please fill out all fields.");
+      }
   });
+
+  // Example dynamic content
+  const trip1 = document.getElementById("trip1");
+  trip1.addEventListener("click", () => {
+      alert("Beginner's Delight: A gentle ride perfect for first-timers.");
+  });
+});
